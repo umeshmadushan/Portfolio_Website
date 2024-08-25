@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umesh Madushan</title>
+  <link rel="stylesheet" href="Index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <!-- AOS animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <nav class="navbar" id="myNavbar">
+    <a href="#" class="navbar-brand">
+      <i class="fa fa-code"></i> Umesh Madushan
+    </a>
+    <div class="navbar-links md:flex md:justify-center md:items-center">
+      <a href="#about">About</a>
+      <a href="#top_selection">Projects</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#contact"><img class="h-8" src="/bmc-button.png" alt="buy_me_coffee_img" /></a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <div id="zoom-out" class="zoomOut">
+    <div class="hero">
+      <img src="mac_screen.png" alt="Image of a Mac" />
+
+      <div class="hero_heading">
+        <div class="heading_window">
+          <div class="circle red"></div>
+          <div class="circle orange"></div>
+          <div class="circle green"></div>
+        </div>
+        <div class="Profilecircle">
+          <div class="ProfilecircleIMG" data-aos="zoom-out" data-aos-duration="1000"></div>
+        </div>
+
+        <h2 class="text-xs font-medium mt-3" data-aos="fade-up" data-aos-duration="1000">
+          Umesh Madushan
+          <i class="fa-solid fa-circle-check text-sky-500 verify_icon"></i>
+        </h2>
+        <h1 class="font-bold lg:text-xl text-sm interest" data-aos="fade-up" data-aos-duration="1400">
+          Laraval & Flutter Developer
+        </h1>
+        <!-- <div class="hero_about">
+            <p>
+              Combine Laravel's robust backend with Flutter's expressive
+              frontend for seamless performance and a captivating user
+              experience.
+            </p>
+          </div> -->
+        <a href="#top_selection" class="short_link mt-2 text-blue-500" data-aos="fade-up" data-aos-duration="1800">Top
+          Selections
+          <i class="fa-solid fa-angle-right endeavors_icon"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="intro" class="intro">
+    <h1 class="lg:text-7xl md:text-6xl text-5xl">
+      Performance is a feature. Speed is experienced before content in the
+      frontend world.
+    </h1>
+  </div>
+
+  <div id="about" class="projects-section">
+    <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-8">
+      <div class="itemLeft lg:p-20 p-10 border border-slate-200">
+        <h1 class="mb-4 font-semibold text-2xl">hello world,</h1>
+        <p class="text-slate-600">
+          As a fourth-year undergraduate at the Sri Lanka Institute of
+          Information Technology, I blend detail-orientation with strong
+          organizational skills. My university experience has sharpened my
+          competencies, especially in frontend development, where my passion
+          lies. I'm eager to apply my academic background and technical skills
+          to contribute effectively to innovative projects in dynamic work
+          environments.
+        </p>
+      </div>
+      <div class="itemRight grid grid-cols-1 gap-4">
+        <div class="subItemRightSkills bg-white p-5 border border-slate-200">
+          <!-- <h1 class="font-semibold text-2xl mb-3 ms-3 text-center">
+              My Favorites
+            </h1>
+            <hr /> -->
+          <div class="languages-container scroller mt-4">
+            <div class="languages">
+              <img src="react.jpg" alt="React" />
+              <img src="laravelnew.webp" alt="Laravel" />
+              <img src="swift.png" alt="Swift" />
+              <img src="flutter.png" alt="Flutter" />
+              <img src="tailwind.png" alt="Tailwind" />
+            </div>
+          </div>
+        </div>
+
+        <div class="subItemRightBottom grid grid-cols-2 gap-4">
+          <div class="subItemRight bg-white p-5 border border-slate-200">
+            <h1 class="font-bold countP">1</h1>
+            <h2 class="text-slate-600">Total Projects</h2>
+          </div>
+          <div class="subItemRight bg-white p-5 border border-slate-200">
+            <div class="subtext flex items-end">
+              <div class="font-bold countY">2</div>
+              <div class="ms-2 year mb-4">Years</div>
+            </div>
+            <h2 class="text-slate-600">Experience</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="top_selection" class="projects-gallery-area pt-20">
+      <h1 class="font-bold lg:text-7xl md:text-5xl text-3xl lg:text-start text-center md:ms-20">
+        Top Selections
+      </h1>
+      <div class="project-gallery mt-10">
+        <div class="project-card">
+          <img src="Authentication_app.png" alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Authentication App</h1>
+            <p class="text-base text-slate-300">
+              Welcome to Authentication App, a user-friendly platform focused on seamless access. Get started quickly with our
+              simple login and registration pages, featuring secure Google authentication for an enhanced sign-in
+              experience. Built using Flutter and Firebase, we ensure reliable and smooth performance.
+            </p>
+            <a href="https://github.com/umeshmadushan/Authentication_Mobile_App_Flutter" target="_blank"><button
+                class="button mt-8">
+                Get Source Code
+                <i class="fa-solid fa-file-code ms-2"></i></button></a>
+          </div>
+          <!-- <div class="content">
+              <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+              <p class="text-base text-slate-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+                repellendus quae voluptatum nobis voluptate doloribus laborum
+                impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+                accusantium labore. Corrupti impedit cumque a.
+              </p>
+              <button class="button mt-8">Get Source Code <i class="fa-solid fa-file-code ms-2"></i></button>
+            </div> -->
+        </div>
+        <div class="project-card">
+          <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg"
+            alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
+            alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://www.kayak.co.uk/news/wp-content/uploads/sites/5/2017/11/DEST_THAILAND_TAK_PEOPLE_WOMAN_TAKING_PICTURE_PHONE_CAMERA_GettyImages-1366882112-1.jpg"
+            alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://pixlr.com/images/index/product-image-one.webp" alt="img-1" />
+          <div class="project-card-body">
+            <h1 class="font-bold text-3xl mb-5">Project 01</h1>
+            <p class="text-base text-slate-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex
+              repellendus quae voluptatum nobis voluptate doloribus laborum
+              impedit, magnam reiciendis, adipisci cupiditate doloremque modi
+              accusantium labore. Corrupti impedit cumque a.
+            </p>
+            <button class="button mt-8">
+              Get Source Code <i class="fa-solid fa-file-code ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-section">
+    <h1 class="text-6xl lg:text-8xl">Are you satisfied with my projects?</h1>
+    <a href="#" class="mt-9 font-semibold text-xl text-blue-500">
+      Contact me <i class="fa-solid fa-angle-right text-lg ms-2"></i>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        <span><i class="fa-regular fa-copyright"></i> Umesh Madushan. All rights
+          reserved.</span>
+      </div>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/umesh-madushan-46b163226/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/umeshmadushan" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="Index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("myNavbar");
+      var icon = document.querySelector("#myNavbar .icon i");
+
+      if (x.className === "navbar") {
+        x.className += " responsive";
+        icon.className = "fas fa-times"; // Change to close icon
+      } else {
+        x.className = "navbar";
+        icon.className = "fas fa-bars"; // Change back to menu icon
+      }
+    }
+  </script>
+</body>
+
+</html>
