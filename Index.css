@@ -14,7 +14,7 @@ body {
   border-radius: 25px;
   color: #ffffff;
   transition: 0.3s;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .button:hover {
   background-color: rgb(6, 128, 241);
@@ -80,7 +80,16 @@ body {
     -webkit-backdrop-filter: blur(10px);
   }
   .navbar.responsive .navbar-links a {
-    text-align: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    font-size: 10px;
+  }
+  .proj_hedding{
+    font-size: 20px;
   }
 }
 
@@ -116,7 +125,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 36vh;
-  width: 70%;
+  width: 36%;
   border-radius: 0px 0px 3px 3px;
   background-color: rgb(248, 248, 248);
   text-align: center;
@@ -138,6 +147,7 @@ body {
 }
 .short_link {
   font-size: 7px;
+  z-index: 100;
 }
 .endeavors_icon {
   font-size: 6px;
@@ -205,7 +215,7 @@ body {
     background-position: 0% 200%;
   }
 }
-.ProfilecircleIMG {
+.zoomOut .ProfilecircleIMG {
   border-radius: 50%;
   height: 90px;
   width: 90px;
@@ -215,7 +225,7 @@ body {
   z-index: 8;
 }
 
-.Profilecircle {
+.zoomOut .Profilecircle {
   border-radius: 50%;
   height: 90px;
   width: 90px;
@@ -224,7 +234,7 @@ body {
   z-index: 1;
 }
 
-.Profilecircle::before {
+.zoomOut .Profilecircle::before {
   content: "";
   height: 90px;
   width: 90px;
@@ -248,7 +258,7 @@ body {
   will-change: opacity, transform;
 }
 
-.Profilecircle::after {
+.zoomOut .Profilecircle::after {
   content: "";
   height: 100px;
   width: 100px;
@@ -307,6 +317,11 @@ body {
   padding: 50px;
   padding-top: 70px;
 }
+
+.proj_hedding{
+  font-size: 30px;
+}
+
 .itemLeft {
   background-color: white;
 }
@@ -469,7 +484,9 @@ hr {
   align-items: center;
   text-align: center;
   padding: 0 15%;
+  background: linear-gradient(to bottom, rgb(245, 245, 245), white);
 }
+
 
 .contact-section h1 {
   letter-spacing: -0.045em;
@@ -526,4 +543,241 @@ hr {
 }
 .social-media a:hover {
   opacity: 1;
+}
+
+/* Default styles */
+#zoom-out {
+  display: none;
+}
+
+.mobile.mobstyle {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mobileMainArea {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30%;
+}
+
+.mobile.mobstyle .Profilecircle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile.mobstyle .ProfilecircleIMG {
+  position: absolute;
+  width: 93%;
+  height: 93%;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url("my.JPG");
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.mobile.mobstyle .Profilecircle::before,
+.mobile.mobstyle .Profilecircle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: conic-gradient(
+    from 45deg,
+    rgb(149, 202, 255),
+    rgb(255, 159, 239),
+    rgb(250, 190, 158),
+    rgb(163, 158, 255)
+  );
+  filter: blur(6px);
+  z-index: 1;
+}
+
+.mobile.mobstyle .Profilecircle::before {
+  width: 100%;
+  height: 100%;
+  animation: heroImgShadow1 3s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.mobile.mobstyle .Profilecircle::after {
+  width: 100%;
+  height: 100%;
+  animation: heroImgShadow2 1.5s ease-out forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.mobile.mobstyle h2,
+.mobile.mobstyle h1,
+.mobile.mobstyle a {
+  margin: 10px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.mobile.mobstyle .short_link {
+  font-size: 20px;
+}
+.mobile.mobstyle .endeavors_icon {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px)  {
+  .mobile .interest {
+    font-size: 70px !important;
+  }
+  .mobileMainArea {
+    top: 25%;
+  }
+
+  .mobile.mobstyle .Profilecircle::before,
+  .mobile.mobstyle .Profilecircle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: conic-gradient(
+      from 45deg,
+      rgb(149, 202, 255),
+      rgb(255, 159, 239),
+      rgb(250, 190, 158),
+      rgb(163, 158, 255)
+    );
+    filter: blur(6px);
+    z-index: 1;
+  }
+
+  .mobile.mobstyle .Profilecircle::before {
+    width: 90%;
+    height: 90%;
+    animation: heroImgShadow1 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  .mobile.mobstyle .Profilecircle::after {
+    width: 100%;
+    height: 100%;
+    animation: heroImgShadow2 1.5s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+  }
+  .proj_dec{
+    font-size: 10px;
+    height: auto;
+  }
+
+  .button{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .mobile.mobstyle .Profilecircle {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 925px) {
+  .proj_hedding{
+    font-size: 20px;
+  }
+  .proj_dec{
+    margin-top: 0;
+    display: none;
+  }
+  .button{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 570px) {
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social-media{
+    margin-top: 10px;
+  }
+
+  .proj_dec{
+    display: none;
+  }
+
+  .copyright span{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .mobile .interest {
+    font-size: 40px !important;
+  }
+  .mobileMainArea {
+    top: 25%;
+  }
+  .proj_dec{
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  .mobile .interest {
+    font-size: 35px !important;
+  }
+  .mobileMainArea {
+    top: 20%;
+  }
+}
+
+/* For screens wider than 1480px */
+@media screen and (min-width: 1025px) {
+  #zoom-out {
+    display: block;
+  }
+
+  .mobile.mobstyle {
+    display: none;
+  }
+}
+
+/* For screens 1480px and narrower */
+@media screen and (max-width: 1024px) {
+  #zoom-out {
+    display: none;
+  }
+
+  .mobile.mobstyle {
+    display: block;
+  }
+  .mobstyle{
+    overflow: hidden;
+  }
 }
