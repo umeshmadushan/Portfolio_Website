@@ -748,11 +748,55 @@ hr {
     display: none;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .countY{
+    font-size: 45px !important;
+  }
+  .countP{
+    font-size: 45px !important;
+  }
+  .subItemRightBottom h2{
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .mobile .interest {
     font-size: 35px !important;
   }
   .mobileMainArea {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .mobile.mobstyle .Profilecircle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile.mobstyle h2,
+.mobile.mobstyle h1,
+.mobile.mobstyle a {
+  margin: 10px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.mobile.mobstyle .name{
+  font-size: 16px !important;
+}
+.mobile.mobstyle .interest{
+  font-size: 30px !important;
+}
+
+.mobileMainArea {
     top: 20%;
   }
 }
